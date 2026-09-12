@@ -11,7 +11,7 @@
     <section class="addArticle">
       div top ajouter un element 
       <form id="formulaire">
-        <input id="article" type="text" name="name" placeholder="Entrez votre article" >
+        <input id="article" type="text" name="name" placeholder="Entrez votre article" required >
         <select id="liste" name="wichList">
           <option value="list1">liste 1</option>
           <option value="list2">liste 2</option>
@@ -19,7 +19,7 @@
           <option value="list4">liste 4</option>
         </select>
         <label>
-                  <input type="radio" name="categorie" value="menager"/> menager
+                  <input type="radio" name="categorie" value="menager" required/> menager
         </label>
         <label>
                   <input type="radio" name="categorie" value="alimentaire"/> alimentaire
@@ -29,7 +29,7 @@
 
         </label>
         <br/> 
-        <button id="valider"> Valider </button>
+        <button id="valider" type="submit"> Valider </button>
       </form>
     </section>
   <br /> <br />
