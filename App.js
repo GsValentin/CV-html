@@ -9,5 +9,5 @@ valider.addEventListener("click", () => {
 
 valider.addEventListener("click", ()=>{
   const texte = article.value;
-  message.textContent = "Valider !!!";
+  message.textContent = texte;
 })
