@@ -6,30 +6,30 @@
   <title>Document</title>
 </head>
 <body>
-  <section class="Main">
+  <section class="main">
     <br/> <br/>
-    <section class="divTop">
+    <section class="addArticle">
       div top ajouter un element 
-      <form action="/traitment" method="dialog">
-        <input type="text" name="name" placeholder="Entrez votre article" >
-        <select name="wichList">
+      <form id="formulaire">
+        <input id="article" type="text" name="name" placeholder="Entrez votre article" >
+        <select id="liste" name="wichList">
           <option value="list1">liste 1</option>
           <option value="list2">liste 2</option>
           <option value="list3">liste 3</option>
           <option value="list4">liste 4</option>
         </select>
-        <input type="checkbox" name="menager"/> menager
-        <input type="checkbox" name="alimentaire"/> alimentaire
-        <input type="checkbox" name="autres" /> autres 
+        <input type="radio" name="categorie" value="menager"/> menager
+        <input type="radio" name="categorie" value="alimentaire"/> alimentaire
+        <input type="radio" name="categorie" value="autres" /> autres 
         <br/> 
         <button id="valider"> Valider </button>
       </form>
     </section>
   <br /> <br />
     
-    <section class="Mid">
+    <section class="articleList">
       div mid liste des articles 
-      <ul>
+      <ul id="articles">
         <li>
           <label>
             <input type="checkbox"> pomme
@@ -58,7 +58,7 @@
       </ul>
     </section>
     <br/> <br/>
-    <section class= "Bottom">
+    <section class= "navigation">
        div bottom mettre profil/home/liste des listes
     </section>
   </section>
