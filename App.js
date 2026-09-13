@@ -17,6 +17,6 @@ valider.addEventListener("click", () => {
   label.appendChild(textArticle);
 
   nouvelElement.appendChild(label);
-  article.appendChild(nouvelElement);
+  articles.appendChild(nouvelElement);
   
 });
