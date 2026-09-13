@@ -1,7 +1,9 @@
 const valider = document.querySelector("#valider");
 const article = document.querySelector("#article");
 
-valider.addEventListener("click", () => {
+valider.addEventListener("click", (e) => {
+    e.preventDefault();
+  
   const texte = article.value;
   const nouvelElement= document.createElement("li");
   const checkbox = document.createElement("input");
@@ -17,5 +19,4 @@ valider.addEventListener("click", () => {
 
   nouvelElement.appendChild(label);
   articles.appendChild(nouvelElement);
-  
 });
