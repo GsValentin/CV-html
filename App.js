@@ -6,6 +6,7 @@ valider.addEventListener("click", () => {
   const texte = article.value;
   const nouvelElement= document.createElement("li");
   const checkbox = document.createElement("input");
+  const articles = document.querySelector("#articles");
   checkbox.type="checkbox";
 
   const label= document.createElement("label");
