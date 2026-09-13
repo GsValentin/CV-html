@@ -1,14 +1,21 @@
 const valider = document.querySelector("#valider");
-const valider = document.querySelector("#valider");
 const message = document.querySelector("#message");
 const article = document.querySelector("#article");
-console.log(valider);
 
 valider.addEventListener("click", () => {
-  console.log("valider");
-});
-
-valider.addEventListener("click", ()=>{
   const texte = article.value;
-  message.textContent = texte;
-})
+  const nouvelElement= document.createElement("li");
+  const checkbox = document.createElement("input");
+  checkbox.type="checkbox";
+
+  const label= document.createElement("label");
+
+  const textArticle= document.createTextNode(texte);
+
+  label.appenechild(checkbox);
+  label.appendChild(textArticle);
+
+  nouvelElement.appendChild(label);
+  article.appeneChild(nouvelElement);
+  
+});
