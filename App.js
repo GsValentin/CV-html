@@ -1,5 +1,4 @@
 const valider = document.querySelector("#valider");
-const message = document.querySelector("#message");
 const article = document.querySelector("#article");
 
 valider.addEventListener("click", () => {
