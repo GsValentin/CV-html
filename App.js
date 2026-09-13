@@ -1,4 +1,5 @@
 const valider = document.querySelector("#valider");
+const valider = document.querySelector("#valider");
 const message = document.querySelector("#message");
 const article = document.querySelector("#article");
 console.log(valider);
