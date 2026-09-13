@@ -12,10 +12,10 @@ valider.addEventListener("click", () => {
 
   const textArticle= document.createTextNode(texte);
 
-  label.appenechild(checkbox);
+  label.appendChild(checkbox);
   label.appendChild(textArticle);
 
   nouvelElement.appendChild(label);
-  article.appeneChild(nouvelElement);
+  article.appendChild(nouvelElement);
   
 });
