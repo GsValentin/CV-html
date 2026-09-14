@@ -4,7 +4,7 @@ const article = document.querySelector("#article");
 valider.addEventListener("click", (e) => {
     e.preventDefault();
   
-  const texte = article.value;
+  const texte = article.value.trim();
   const nouvelElement= document.createElement("li");
   const checkbox = document.createElement("input");
   const articles = document.querySelector("#articles");
