@@ -21,7 +21,7 @@ valider.addEventListener("click", (e) => {
   nouvelElement.appendChild(label);
   articles.appendChild(nouvelElement);
 
-    artice.value= ""
+    artice.value= "";
 
 }else{
     alert("Aucun article renseinger !!! ");
