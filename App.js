@@ -6,8 +6,24 @@ valider.addEventListener("click", (e) => {
   
   const texte = article.value.trim();
   if(text!==""){
-    alert("il y ad bkelzsbd")
+  const nouvelElement= document.createElement("li");
+  const checkbox = document.createElement("input");
+  const articles = document.querySelector("#articles");
+  checkbox.type="checkbox";
+
+  const label= document.createElement("label");
+
+  const textArticle= document.createTextNode(texte);
+
+  label.appendChild(checkbox);
+  label.appendChild(textArticle);
+
+  nouvelElement.appendChild(label);
+  articles.appendChild(nouvelElement);
+
+    artice.value= ""
+
 }else{
-    alert("Aucun article renseinger !!! ")
+    alert("Aucun article renseinger !!! ");
 }
 });
