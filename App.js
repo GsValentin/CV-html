@@ -5,7 +5,8 @@ valider.addEventListener("click", (e) => {
     e.preventDefault();
   
   const texte = article.value.trim();
-  const nouvelElement= document.createElement("li");
+  if(text!=="") {
+    const nouvelElement= document.createElement("li");
   const checkbox = document.createElement("input");
   const articles = document.querySelector("#articles");
   checkbox.type="checkbox";
@@ -20,5 +21,9 @@ valider.addEventListener("click", (e) => {
   nouvelElement.appendChild(label);
   articles.appendChild(nouvelElement);
 
-  artice.value= ""
+    artice.value= ""
+
+}else {
+    alert("Aucun article renseinger !!! ")
+}
 });
