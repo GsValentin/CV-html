@@ -7,7 +7,7 @@ valider.addEventListener("click", (e) => {
   
   const texte = article.value.trim();
   console.log("texte recup :", texte)
-  if(texe!==""){
+  if(texte!==""){
   const nouvelElement= document.createElement("li");
   const checkbox = document.createElement("input");
   checkbox.type="checkbox";
