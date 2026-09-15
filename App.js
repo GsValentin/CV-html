@@ -1,5 +1,6 @@
 const valider = document.querySelector("#valider");
 const article = document.querySelector("#article");
+const articles = document.querySelector("#articles");
 
 valider.addEventListener("click", (e) => {
     e.preventDefault();
@@ -9,7 +10,6 @@ valider.addEventListener("click", (e) => {
   if(texe!==""){
   const nouvelElement= document.createElement("li");
   const checkbox = document.createElement("input");
-  const articles = document.querySelector("#articles");
   checkbox.type="checkbox";
 
   const label= document.createElement("label");
