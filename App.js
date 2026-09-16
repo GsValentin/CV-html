@@ -13,24 +13,23 @@ valider.addEventListener("click", (e) => {
   checkbox.type="checkbox";
 
   const label= document.createElement("label");
+  const span= documment.createElement("span");
 
   checkbox.addEventListener("change", ()=> {
     if (checkbox.checked){
       span.classlist.add("termine");
     }else{
-      span.classlist.removz("termine");
+      span.classlist.remove("termine");
     }
   });
-
-  span.appendChild(textArticle);
-  
+    
   label.appendChild(checkbox);
   label.appendChild(span);
 
   nouvelElement.appendChild(label);
   articles.appendChild(nouvelElement);
 
-    artice.value= "";
+    article.value= "";
 
 }else{
     alert("Aucun article renseinger !!! ");
