@@ -36,7 +36,4 @@ valider.addEventListener("click", (e) => {
 }else{
     alert("Aucun article renseinger !!! ");
 }
-  checkbox.addEventListener("change", ()=> {
-    
-  })
 });
