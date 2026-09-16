@@ -14,8 +14,16 @@ valider.addEventListener("click", (e) => {
 
   const label= document.createElement("label");
 
-  const textArticle= document.createTextNode(texte);
+  checkbox.addEventListener("change", ()=> {
+    if (checkbox.checked){
+      span.classlist.add("termine");
+    }else{
+      span.classlist.removz("termine");
+    }
+  });
 
+  span.appendChild(textArticle);
+  
   label.appendChild(checkbox);
   label.appendChild(textArticle);
 
