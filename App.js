@@ -13,13 +13,13 @@ valider.addEventListener("click", (e) => {
   checkbox.type="checkbox";
 
   const label= document.createElement("label");
-  const span= documment.createElement("span");
+  const span= document.createElement("span");
 
   checkbox.addEventListener("change", ()=> {
     if (checkbox.checked){
-      span.classlist.add("termine");
+      span.classList.add("termine");
     }else{
-      span.classlist.remove("termine");
+      span.classList.remove("termine");
     }
   });
     
