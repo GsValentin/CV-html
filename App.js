@@ -25,7 +25,7 @@ valider.addEventListener("click", (e) => {
   span.appendChild(textArticle);
   
   label.appendChild(checkbox);
-  label.appendChild(textArticle);
+  label.appendChild(span);
 
   nouvelElement.appendChild(label);
   articles.appendChild(nouvelElement);
